@@ -1,64 +1,58 @@
-.btn{
-    width: 130px;
-    height: 35px;
-    line-height: 35px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #a0d468;
-    margin: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    box-shadow: 0 3px 0 0 #95cb5c;
+.make-btn (@color1, @color2) {
+  background-color: @color1;
+  border-color: darken(@color1, 10%);
 
-    &:hover{
-    background-color: #addf7a;
-    box-shadow: 0 3px 0 0 #95cb5c;
-  } 
+      &:hover {
+        background-color: @color2;
+        border-color: darken(@color2, 5%);
+      }
 
-  &:active{
-    background-color: #9cd066;
-    box-shadow: none;   
-    box-sizing: content-box;
-    top: 3px;
-    position: relative;
-  }
-
-  &--small{
-    width: 90px;
-    height: 25px;
-    line-height: 25px;
-  }
-
-  &--grey{
-    background-color: #536167;
-    box-shadow: 0 3px 0 0 #3b4549;
-
-    &:hover{
-      background-color: #677980;
-      box-shadow: 0 3px 0 0 #56656b;      
-    }
-    &:active{
-      background-color: #536167;
-      box-shadow: none;   
-      box-sizing: content-box;      
-    }
-  }
-
-  &--red{
-    background-color: #fc6e51;
-    box-shadow: 0 3px 0 0 #e3573b;
-
-    &:hover{
-      background-color: #fb7f65;
-      box-shadow: 0 3px 0 0 #ec694f;      
-    }
-    &:active{
-      background-color: #fc6e51;
-      box-shadow: none;   
-      box-sizing: content-box;      
-    }
-  }
+      &:active {
+        border: 0;
+        background-color: @color1;
+      }
 }
 
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  min-width: 130px;
+  color: #fff;
+  text-decoration: none;
+  font-family: @title-font-family;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  
+
+  &--small {
+    min-width: 100px;
+    padding: 3px 20px;
+    vertical-align: bottom;
+  }
+
+  &--grey {
+    .make-btn (@color-grey, @color-grey-hover);
+  }
+
+  &--green {
+    .make-btn (@color-green, @color-green-hover);
+  }
+
+  &--red {
+    .make-btn (@color-red, @color-red-hover);
+  }
+}
