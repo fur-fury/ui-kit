@@ -1,10 +1,10 @@
 .make-btn (@color1, @color2) {
   background-color: @color1;
-  border-color: darken(@color1, 10%);
+  border-bottom-color: darken(@color1, 10%);
 
       &:hover {
         background-color: @color2;
-        border-color: darken(@color2, 5%);
+        border-bottom-color: darken(@color2, 5%);
       }
 
       &:active {
@@ -23,7 +23,7 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  //border: 1px solid transparent;
   white-space: nowrap;
   min-width: 130px;
   color: #fff;

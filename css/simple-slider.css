@@ -1,0 +1,42 @@
+.slider {
+  width: 100%;
+  position: relative;
+  padding: 30px 0;
+}
+
+.slider > .dragger {
+  background: #8DCA09;
+  border-radius: 10px;
+  display: none;
+  border: 1px solid #496805;
+  width: 16px;
+  height: 16px;
+}
+
+.slider > .dragger:hover {
+  background: -webkit-linear-gradient(top, #8DCA09, #8DCA09);
+}
+
+
+.slider > .track, .slider > .highlight-track {
+  background: #e6e9ed;
+  border-radius: 8px;
+  height: 8px;
+}
+
+.slider > .highlight-track {
+	background-color: #fc6e51;
+}
+span.output {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+span.output:after {
+  content: '%';
+  display: inline-block;
+
+}

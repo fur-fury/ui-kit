@@ -25,10 +25,10 @@
   height: 260px;
 
 
-  		&:before{
+  		&:before {
   					content: '';
 					  display: block;
-					  background:url(../pict/zoom.png) center center no-repeat #000;
+					  background:#000;
 						cursor: pointer;
 						height: 100%;
 						width: 100%;
@@ -37,10 +37,26 @@
 						opacity: 0;
 				    transition: all .4s;
   		}
-
+			
+			&:after {
+						content: '';
+					  display: block;
+					  background:url(../pict/zoom.png) center center no-repeat;
+						cursor: pointer;
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						z-index: 20;
+						opacity: 0;
+				    transition: all .4s;
+			}
 
   		&:hover:before{
   					opacity: .7;
+  		}
+  		&:hover:after {
+  					opacity: 1;
   		}
 }
 
@@ -87,7 +103,7 @@
 		  		width: 100%;
 				  height: 100%;
 				  transform-style: preserve-3d;
-				  transition: all 1.0s linear;
+				  transition: all 0.5s ease;
 		  }
 
 			&:hover &__container {
@@ -117,7 +133,7 @@
 			}
 
 			&__text {
-					padding: 10px;
+					padding: 30% 20px;
 				  color: #aaa;
 				  text-align: center;
 				  position: absolute;

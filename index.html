@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>UI kit</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/owl.carousel.css">
    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/nouislider.min.css">
+   <link rel="stylesheet" href="css/simple-slider.css">
+   <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
 </head>
+
+
 <body>
 	<section class="layout">
 		<div class="layout__inner">
@@ -68,7 +74,7 @@
 					<p class="p">Первая производная, общеизвестно, изменяет тригонометрический звукосниматель, что известно даже школьникам. Определитель системы линейных уравнений многопланово нейтрализует интеграл от функции, обращающейся в бесконечность вдоль линии, благодаря быстрой смене тембров (каждый инструмент играет минимум звуков).</p>
 					<div class="links">
 						<a href="" class="a">Ссылка</a>
-						<a href="" class="a">Наведение</a>
+						<a href="" class="a hover">Наведение</a>
 					</div>
 				</div>
 			</div>
@@ -147,7 +153,7 @@
 		<h1 class="header-underline">Интерактив</h1>
 		<div class="row">
 			<div class="col-xs-6">
-				<div class="slider">
+				<div class="owl-slider">
 					<div class="owl-carousel">
 					  <div></div>
 					  <div></div>
@@ -179,18 +185,22 @@
 
 							  <div class="tabs__content active">
 							    Содержимое первого блока
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis delectus eligendi magnam sapiente perspiciatis, tenetur ad dolorum excepturi. Obcaecati, minima.
 							  </div>
 
 							  <div class="tabs__content">
 							    Содержимое второго блока
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, libero, tempora. Tempora, nostrum facilis placeat adipisci praesentium fugit, atque id?
 							  </div>
 
 							  <div class="tabs__content">
 							    Содержимое 3 блока
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam esse ad provident aliquid error, exercitationem nostrum maxime voluptas delectus debitis.
 							  </div>
 
 							  <div class="tabs__content">
 							    Содержимое 4 блока
+							    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti libero culpa recusandae cum voluptas cupiditate quod hic soluta, temporibus molestias.
 							  </div>
 
 							</div>
@@ -202,13 +212,256 @@
 	</div>
 </section>
 
-		
+<section class="forms">
+	<div class="forms__inner">
+		<h1 class="header-underline">Формы</h1>
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="form-input-wrapper">
+					<form action="">
+						<input type="text"  class="form-control disabled" placeholder="Lorem ipsum." disabled>
+
+						<input type="text"  class="form-control has-focus" placeholder="Lorem ipsum.">
+
+
+						<div class="form-group has-feedback">
+							<input type="text" placeholder="Ошибка" class="form-control has-error">
+							<i class="form-control-feedback glyphicon glyphicon-remove"></i>
+						</div>
+
+						<div class="form-group has-feedback">
+							<input type="text" placeholder="Успех" class="form-control has-success">
+							<i class="form-control-feedback glyphicon glyphicon-ok"></i>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="form-tags">
+							<form action="">
+								<input type="text" value="Быстрее,Выше,Сильнее" data-role="tagsinput" >
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="form-select">
+							<select name="color-menu" id="custom-select">
+							  <option value="1" disabled>Choose your destiny</option>
+							  <option value="2">flowless</option>
+							  <option value="3">victory</option>
+							  <option value="4">atata</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="form-check-wrapper">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-radio">
+								<form action="">
+
+									<p><input type="radio"  id="radio1"  class="radio form-control disabled" name="radio-name" disabled>
+									<label for="radio1" class="control-label">Lorem ipsum.</label></p>
+
+									<p><input type="radio" id="radio2" class="radio form-control" name="radio-name" checked >
+									<label for="radio2"  class="control-label">Lorem ipsum.</label></p>
+
+								
+									<p><input type="radio" id="radio3" class="radio form-control" name="radio-name" >
+									<label for="radio3"  class="control-label">Lorem ipsum.</label></p>
+
+								</form>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-checkbox">
+								<form action="">
+									<p><input type="checkbox"  id="check1"  class="checkbox form-control disabled"  disabled>
+									<label for="check1" class="control-label">Lorem</label></p>
+
+									<p><input type="checkbox" id="check2" class="checkbox form-control" checked>
+									<label for="check2"  class="control-label">Lorem</label></p>
+
+								
+									<p><input type="checkbox" id="check3" class="checkbox form-control">
+									<label for="check3"  class="control-label">Не lorem</label></p>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-switch">
+								<form action="">
+
+									<p><input type="checkbox" id="switch1" class="checkbox disabled" disabled>
+										<label for="switch1">lorem</label>
+									</p>
+
+									<p><input type="checkbox" id="switch2" class="checkbox" checked>
+										<label for="switch2">ipsum</label>
+									</p>
+
+									<p><input type="checkbox" id="switch3" class="checkbox">
+									<label for="switch3">norm</label>
+									</p>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="form-pro">
+	<div class="form-pro__inner">
+		<h1 class="header-underline">Продвинутые формы</h1>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="steps-wrapper">
+
+					<input type="radio" id="step1" name="step-radio" checked  class="step-radio">
+					<label for="step1" class="step-text">Шаг 1</label>
+					<div class="step-line"></div>
+
+					<input type="radio" id="step2" name="step-radio" class="step-radio">
+					<label for="step2" class="step-text">Шаг 2</label>
+					<div class="step-line"></div>
+
+					<input type="radio" id="step3" name="step-radio" class="step-radio">
+					<label for="step3" class="step-text">Шаг 3</label>
+
+				</div>
+			</div>
+
+			<div class="col-xs-4">
+				<div class="range-wrapper">
+				 <div class="slider-snap" id="connect"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="progress-bar-wrapper">
+					<input type="text" data-slider="true" data-slider-highlight="true" data-slider-range="0,100" value="40">
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="segmented-control">
+					<select class="segment-select">
+					  <option value="1">None</option>
+					  <option value="2">First</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 			
 
+<section class="addition">
+	<div class="addition__inner">
+		<h1 class="header-underline">Дополнительно</h1>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="menu-wrap"  id="accordion">
+					<ul class="menu__list">
+						<span class="menu-header">Входящие</span>
+						
+						<li class="menu__item">
+						<a class="menu__link mail" href="">Новые</a>
+						<div class="menu__number"><span>35</span></div>
+						</li>
 
-	<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+						<li class="menu__item">
+						<a class="menu__link important" href="">Важные</a>
+						<div class="menu__number"><span>38</span></div>
+						</li>
+
+						<li class="menu__item">
+						<a class="menu__link diagram" href="">Работа</a>
+						<div class="menu__number"><span>3</span></div>
+
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a class="submenu__link" href="">Работа1</a>
+											<div class="submenu__number"><span>2</span></div>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="">Работа2</a>
+											<div class="submenu__number"><span>1</span></div>
+										</li>
+									</ul>
+						</li>
+
+						<li class="menu__item">
+						<a class="menu__link  lock" href="">Спам</a>
+						<div class="menu__number"><span>3</span></div>
+						</li>
+
+						<li class="menu__item more">	
+						<a class="more" href="">Показать все</a>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="breadcrumbs">
+							<ul class="breadcrumb">
+								<li><a href="#">Чем дальше</a></li>
+								<li><a href="#">Тем дальше</a></li>
+								<li class="active">Да</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-9">
+						<div class="rating__wrap">
+							<div class="row">
+								<div class="col-xs-4">
+									<span class="rating__text">Оцените:</span>
+								</div>
+								<div class="col-xs-8">
+									<div class="rating"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
 	<script src="scripts/owl.carousel.js"></script>
+	<script src="scripts/tagsly.js"></script>
+	<script src="scripts/custom-select-menu.jquery.min.js"></script>
+	<script src="scripts/wNumb.min.js"></script>
+	<script src="scripts/nouislider.min.js"></script>
+	<script src="scripts/nouislider.init.js"></script>
+	<script src="scripts/tabs.js"></script>
+	<script src="scripts/segment.js"></script>
+	<script src="scripts/jRate.min.js"></script>
+	<script src="scripts/simple-slider.min.js"></script>
+	<script src="scripts/bootstrap-tagsinput.min.js"></script>
+
+
+
+<!-- вызов карусели -->
 
 	<script>
 		$(document).ready(function(){
@@ -223,23 +476,89 @@
 		});
 	</script>
 
+
+<!-- инпут с тегами  -->
+
 	<script>
-		(function($) {
 		$(function() {
-
-		  $('ul.tabs__list').on('click', 'li:not(.active)', function() {
-		    $(this)
-		      .addClass('active').siblings().removeClass('active')
-		      .closest('div.tabs')
-		      .find('div.tabs__content')
-		      .removeClass('active')
-		      .eq($(this).index())
-		      .addClass('active');
+		  $('#tags').tagsly({
+		    // suggestions: function(input, cb) {
+		    //   cb(['']);
+		    // },
+		    // placeholder: '',
+		    maxItems: 5
 		  });
-
 		});
-		})(jQuery);
+
 	</script>
+
+
+<!-- кастомный селект  -->
+
+	<script>
+	$('#custom-select').customSelectMenu();
+	</script>
+
+<!-- сегментед контрол -->
+
+<script>
+	$(".segment-select").Segment();
+</script>
+
+<script>
+  $('.rating').jRate({
+		
+		startColor: 'yellow',
+		endColor: 'yellow',
+		backgroundColor: '#ccc',
+		rating: 3
+	});
+</script>
+
+<!-- менюшка -->
+
+ <script>
+	$('#accordion ul > li').click(function(e){
+		e.preventDefault();
+  var selfClick = $(this).find('ul:first').is(':visible'); // (1)
+  if(!selfClick) {  //(2)
+    $(this)
+      .parent()
+      .find('> li ul:visible')
+      .slideToggle();
+  }
+
+  $(this)
+    .find('ul:first')
+    .stop(true, true)
+    .slideToggle();  // (3)
+  })
+ </script>
+
+<!-- или проще -->
+<script>
+	// $('.menu__item').on('click', function(e){
+ //    e.preventDefault();
+ //    $(this).closest('li').children('.submenu__list').slideToggle();
+ //  });
+</script>
+
+<script>
+	
+  $("[data-slider]")
+    .each(function () {
+      var input = $(this);
+      $("<span>")
+        .addClass("output")
+        .insertAfter($(this));
+    })
+    .bind("slider:ready slider:changed", function (event, data) {
+      $(this)
+        .nextAll(".output:first")
+          .html(data.value.toFixed(0));
+    });
+  
+</script>
 
 </body>
 </html>

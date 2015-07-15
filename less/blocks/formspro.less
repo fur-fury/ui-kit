@@ -1,0 +1,227 @@
+.form-pro {
+
+
+/*---------RANGE--------------*/
+	
+
+	.range-wrapper {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 40px 35px 25px;
+		max-height: 100px;
+		overflow: hidden;
+		margin-bottom: 30px;
+	}
+
+	.noUi-horizontal {
+		height: 8px;
+		background-color: #e6e9ed;
+	}
+
+	.noUi-horizontal .noUi-handle {
+		height: 18px;
+		width: 18px;
+		background-color: @some-orange;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		box-shadow: none;
+		left: -9px;
+  		top: -5px;
+	}
+
+	.noUi-handle:after, .noUi-handle:before {
+		display: none;
+	}
+
+	#connect .noUi-origin {
+		right: auto;
+		width: 0;
+	}
+
+	#connect .connect {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: @some-orange;
+	}
+
+	#connect.noUi-state-tap .connect {
+	-webkit-transition: left 300ms, right 300ms;
+		transition: left 300ms, right 300ms;
+	}
+
+	.tooltip {
+		display: inline-block;
+		position: absolute;
+		background: transparent;
+		top: -25px;
+		left: -25px;
+		text-align: center;
+		width: 70px;
+	}
+
+	.tooltip strong {
+		display: block;
+		padding: 2px;
+	}
+
+	.noUi-background, .noUi-target {
+		border: 0;
+		box-shadow: none;
+	}
+
+
+
+
+
+	/*--------PROGRESS-BAR--------*/
+
+
+	.progress-bar-wrapper {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 20px 35px 30px;
+		max-height: 100px;
+}
+
+	
+	
+
+	
+
+
+
+
+
+	/*------SEGMENTED CONTROL-----*/
+	
+
+	.segmented-control {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 25px 35px 25px;
+		max-height: 100px;
+		text-align: center;
+	}
+
+	.ui-segment{
+	color: @some-orange;
+	border: 2px solid @some-orange;
+	border-radius: 5px;
+	display:inline-block;
+	}
+	.ui-segment span.option.active{
+		background-color: @some-orange;
+		color: white;
+	}
+	.ui-segment span.option{
+		font-size: 15px;
+		height: 35px;
+		text-align:center;
+		display:inline-block;
+		width: 120px;
+		line-height: 35px;
+		vertical-align: middle;
+		margin: 0px;
+		float:left;
+		cursor:pointer;
+		border-right:2px solid @some-orange;
+	}
+	.ui-segment span.option:last-child{
+		border-right: none;
+	}
+	.segment-select{
+		display:none;
+	}
+
+
+
+	
+
+	/*---------STEP-RADIO---------*/
+
+
+	.steps-wrapper {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 45px 20px 10px;
+		max-height: 100px;
+		text-align: center;
+	}
+
+	.step-radio {
+		display: none;
+	}
+	
+	.step-radio:checked + .step-text:after{
+		background-color: @some-orange;
+	}
+
+	.step-radio:checked + .step-text ~ .step-text:after {
+  background-color: #ccc;
+	}
+
+	.step-radio:checked + .step-text ~ .step-line {
+	  background-color: #ccc;
+	}
+
+	.step-radio:checked + .step-text ~ .step-line:after,
+	.step-radio:checked + .step-text ~ .step-line:before {
+	  background-color: #ccc;
+	}
+
+	.step-text {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+
+				&:after {
+					content: '';
+				  display: block;
+				  position: absolute;
+				  width: 12px;
+				  height: 12px;
+				  background-color: @some-orange;
+				  border-radius: 50%;
+				  top: -20px;
+				  left: 35%;
+				  cursor: pointer;
+				}
+	}
+	
+	.step-line {
+		width: 35%;
+		display: inline-block;
+		height: 2px;
+		background-color: @some-orange;
+		top: -28px;
+		position: relative;
+
+				&:before {
+					content: '';
+				  background-color: @some-orange;
+				  height: 2px;
+				  width: 30%;
+				  display: block;
+				  position: absolute;
+				  top: 0;
+				  right: -15px;
+				}
+
+				&:after {
+					content: '';
+				  background-color: @some-orange;
+				  height: 2px;
+				  width: 30%;
+				  display: block;
+				  position: absolute;
+				  top: 0;
+				  left: -15px;
+				}
+	}
+
+	.step-radio:checked+.step-text:after, 
+	.step-line:before, .step-line:after {
+		background-color: @some-orange;
+	}
+}
